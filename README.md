@@ -11,10 +11,11 @@ The methodologies developed here—finite-boundary modeling, frequency-domain si
 * **The Flaw:** The standard laboratory model assumes an infinitely long cylinder, predicting a strictly linear log-attenuation ($\ln A \propto -x$). However, at low frequencies ($\tau = 60s$), the extended thermal diffusion length causes strong wave reflection at the top boundary. Forcing a linear fit resulted in a catastrophic **>20x overestimation** of $D$.
 * **My Solution:** Discarded the upward-only approximation. Analytically solved the 1D heat equation for a finite cylinder with an adiabatic top boundary ($\partial T / \partial x = 0$ at $x=L$). 
 * **Result:** Derived and implemented a finite-length amplitude model (the `cosh` model), which perfectly captures the non-linear standing wave curvature and strictly restored the extracted $D$ value to the correct physical magnitude ($\sim 10^{-5} m^2/s$).
+<img width="640" height="416" alt="image" src="https://github.com/user-attachments/assets/4c16f5de-5527-4c42-b50b-24627faac9c1" />
 
-*(👉 大实话提示：在这里把 PPT 第 6 页【直线拟合失败的图】和第 7 页【cosh 完美拟合的曲线图】拼成一张图拖进来，并在下面写上图注)*
-![Put your comparison graph here: Linear Fit Failure vs. Cosh Fit Success]()
-*Figure 1: Comparison between the flawed infinite-length linear assumption (left) and the corrected finite-length adiabatic `cosh` model (right).*
+<img width="656" height="433" alt="image" src="https://github.com/user-attachments/assets/1310ccc6-6065-426e-8d78-ca820d82b27d" />
+
+*Figure 1: Comparison between the flawed infinite-length linear assumption (up) and the corrected finite-length adiabatic `cosh` model (down).*
 
 ### 2. Hardware Asymmetry & Harmonic Distortion Filtering
 * **The Flaw:** Peltier heat pumps exhibit asymmetrical heating and cooling rates, injecting non-sinusoidal harmonic distortion into the thermal waves (Total Harmonic Distortion, THD $\approx 5.7\%$). Naive sine-fitting forces a mathematical compromise with these harmonics, causing a $+0.68\%$ systematic error.
