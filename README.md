@@ -35,8 +35,8 @@ By applying the updated finite-boundary `cosh` model, Fourier signal extraction,
 * **Brass:** $3.23 \pm 0.02 \times 10^{-5} m^2/s$ (Optimized at $\tau = 30s-45s$)
 
 ## 📁 Repository Contents
-* `Presentation_Slides.pdf`: The full technical presentation detailing the mathematical derivations, boundary condition proofs, and error analysis.
-* `# Precision Metrology of Thermal Waves: Eliminating Systematic Bias in Heat Transfer Models
+* `[The Precision Metrology of Thermal Waves Beyond the Infinite-Length Approximation By Junhui Huang & Xiaoke Zhan (1).pptx]`: The full technical presentation detailing the mathematical derivations, boundary condition proofs, and error analysis, https://github.com/user-attachments/files/26621284/The.Precision.Metrology.of.Thermal.Waves.Beyond.the.Infinite-Length.Approximation.By.Junhui.Huang.Xiaoke.Zhan.1.pptx
+
 
 
 
